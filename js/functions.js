@@ -3,6 +3,7 @@ $(document).ready(function() {
     $.ajax({
         type: 'GET',
 		dataType: 'json',
+        crossdomain: true;
         url: 'http://dev.meucarroturbo.com.br/data.php',
         async: false,
 		success: function(response) {
