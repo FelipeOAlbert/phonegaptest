@@ -9,7 +9,9 @@
     </author>
     
     <access origin="dev.meucarroturbo.com.br"/>
-
+    
+    <icon src="images/icon.png" />
+    
     <preference name="permissions" value="none" />
     <preference name="orientation" value="portrait" />
     <preference name="fullscreen" value="true" />
