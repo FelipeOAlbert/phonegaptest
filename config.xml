@@ -8,7 +8,7 @@
         Felipe Albert
     </author>
     
-    <access origin="dev.meucarroturbo.com.br"/>
+    <access origin="*.meucarroturbo.com.br"/>
     
     <icon src="images/icon.png" />
     
