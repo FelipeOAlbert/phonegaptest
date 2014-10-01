@@ -1,5 +1,5 @@
-<?xml version='1.0.1' encoding='utf-8'?>
-<widget id="br.com.meucarroturbo.app" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<?xml version='1.0.2' encoding='utf-8'?>
+<widget id="br.com.meucarroturbo.app" version="1.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Meu Carro Turbo</name>
     <description>
         Primeira versão para listagem dos anuncios
@@ -8,7 +8,7 @@
         Felipe Albert
     </author>
     
-    <access origin="*.meucarroturbo.com.br"/>
+    <access origin="*"/>
     
     <icon src="images/icon.png" />
     
