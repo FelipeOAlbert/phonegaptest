@@ -8,7 +8,7 @@
         Felipe Albert
     </author>
     
-    <access origin="*"/>
+    <access origin="*" />
     
     <icon src="images/icon.png" />
     
