@@ -43,10 +43,18 @@ $(document).ready(function() {
 			$('#aguarde2').html('Algo não saiu certo =(!');
         }
     });
+	
+	$('#exit').on('click', function(e){
+		exitFromApp();
+	});
+	
 });
 
 $(document).bind( "mobileinit", function() {
 	$.mobile.allowCrossDomainPages = true;
 });
 
-
+function exitFromApp(){
+   console.log("Fechando Aplicação");
+   navigator.app.exitApp();
+}
