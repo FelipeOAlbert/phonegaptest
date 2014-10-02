@@ -1,8 +1,7 @@
 $(document).ready(function() {
-    
-});
-
-function onDeviceReady() {
+	
+	$.mobile.allowCrossDomainPages = true;
+	
     $.ajax({
         type: 'GET',
 		dataType: 'json',
@@ -11,6 +10,8 @@ function onDeviceReady() {
         async: false,
 		success: function(response) {
             
+			$('#aguarde').attr('style: none;');
+			
             var items = [];
             $.each(response, function( key, val) {
                 
@@ -41,4 +42,4 @@ function onDeviceReady() {
             alert("Encontramos algum erro, tente novamente");
         }
     });
-}
+});
