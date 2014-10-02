@@ -7,6 +7,8 @@ $(document).ready(function() {
         async: false,
 		success: function(response) {
             
+			$('#aguarde').attr('style: none;');
+			
 			var items = [];
 			
             $.each(response, function( key, val) {
@@ -40,12 +42,7 @@ $(document).ready(function() {
     });
 });
 
-//document.addEventListener("deviceready", appReady, false);
-
-
-$( document ).bind( "mobileinit", function() {
-	// Make your jQuery Mobile framework configuration changes here!
-	$('#aguarde').attr('style: none;');
+$(document).bind( "mobileinit", function() {
 	$.mobile.allowCrossDomainPages = true;
 });
 
