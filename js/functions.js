@@ -1,7 +1,4 @@
 $(document).ready(function() {
-	
-	$.mobile.allowCrossDomainPages = true;
-	
     $.ajax({
         type: 'GET',
 		dataType: 'json',
@@ -41,6 +38,15 @@ $(document).ready(function() {
             alert("Encontramos algum erro, tente novamente");
         }
     });
+});
+
+//document.addEventListener("deviceready", appReady, false);
+
+
+$( document ).bind( "mobileinit", function() {
+	// Make your jQuery Mobile framework configuration changes here!
+	$('#aguarde').attr('style: none;');
+	$.mobile.allowCrossDomainPages = true;
 });
 
 
