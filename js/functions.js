@@ -1,5 +1,6 @@
 $(document).ready(function() {
-    $.ajax({
+	
+	$.ajax({
         type: 'GET',
 		dataType: 'json',
         crossDomain: true,
@@ -7,13 +8,14 @@ $(document).ready(function() {
         async: false,
 		success: function(response) {
             
-			$('#aguarde').attr('style: none;');
+			$('#aguarde').html('Carregado!');
+			$('#aguarde2').html('Veja os anuncios abaixo!');
 			
 			var items = [];
 			
             $.each(response, function( key, val) {
                 
-                var html = '<li onclick="location.href="single-page.html";">'+
+                var html = '<li>'+
 							'<img src="'+ val.guid +'" width="200" height="200">'+
 							'<div class="post-info">'+
 								'<div class="post-basic-info">'+
@@ -37,7 +39,8 @@ $(document).ready(function() {
             });
         },
         error: function(){
-            alert("Encontramos algum erro, tente novamente");
+            $('#aguarde').html('Deu ruim!');
+			$('#aguarde2').html('Algo não saiu certo =(!');
         }
     });
 });
